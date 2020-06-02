@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "moduleResolution": "node",
+        "allowJs": false,
+        "strict": true,
+        "isolatedModules": true,
+        "esModuleInterop": true,
+        "jsx": "react",
+        "sourceMap": true
+    },
+    "include": [
+        "src"
+    ]
+}

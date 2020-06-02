@@ -1,0 +1,30 @@
+{
+  "name": "wanderlust-react-app",
+  "version": "1.0.0",
+  "description": "The dynamic portions of the Wanderlust frontend",
+  "main": "index.js",
+  "scripts": {
+    "check-types": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d lib",
+    "webpack": "webpack"
+  },
+  "author": "Jordan Kaye",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-react": "^7.10.1",
+    "@babel/preset-typescript": "^7.10.1",
+    "@types/react": "^16.9.35",
+    "@types/react-dom": "^16.9.8",
+    "babel-loader": "^8.1.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "ts-loader": "^7.0.5",
+    "typescript": "^3.9.3",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-server": "^0.1.2"
+  }
+}
