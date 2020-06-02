@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: wanderlust
+  labels:
+    app: wanderlust
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: wanderlust
+  template:
+    metadata:
+      labels:
+        app: wanderlust
+    spec:
+      containers:
+      - image: wanderlust
+        imagePullPolicy: Never
+        name: wanderlust
