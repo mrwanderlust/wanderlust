@@ -13,6 +13,7 @@ RUN cargo build --release
 RUN rm -f target/release/deps/wanderlust*
 
 COPY src src
+COPY templates templates
 RUN cargo build --release
 
 FROM node:current-stretch as npm
