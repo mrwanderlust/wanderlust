@@ -1,0 +1,52 @@
+* Foundational concepts
+  Listed here are the most important concepts to Wanderlust.
+  These are essentially synonymous with mvp features; without anything on this list, Wanderlust wouldn't be able to accomplish what it's setting out to do.
+** Traveler
+   Travelers are our users.
+   All trips available on Wanderlust are added by individual Travelers who either want to share their experiences with others, or keep track of past trips for themselves.
+*** Follower
+    Any Traveler has the ability to Follow any other Traveler. Following is a one-way display of interest; it does not imply any relationship between two Travelers.
+    Followers can opt to be notified of activity from the Travelers that they Follow.
+*** Friend
+    Friends are mutual relationships between Travelers. They must be requested by one Traveler and then subsequently approved by the requestee.
+    Friends have a much greater level of access to a Traveler's data than Followers (who do not require any kind of approval).
+** Trip
+   Trips are travel experiences created by Travelers.
+*** Trips are arbitrarily sized; Travelers decide how they'd like to structure their trips
+*** Each Trip must be associated with exactly one primary location
+    This is mainly for display purposes (so that Trips can be overlaid on digital maps),
+    but will likely end up influencing the way that Travelers decide to structure their Trips.
+** Visibility
+   Each Trip can have a visibility assigned to it. This controls who is able to view the Trip other than the Traveler who created it.
+   The minimum set of useful Visibility options is:
+*** Private (default)
+    The Trip can be viewed only by the Traveler who created it.
+    As a "business" it would be better to make public the default, but private default is the most user-friendly thing that we can do.
+    Private Trips are completely invisible to other Travelers.
+*** Public
+    The Trip can be viewed by anyone on the internet.
+*** Followers
+    The Trip can be viewed by anyone who is Following the Traveler who created it.
+    This is mainly a way to encourage Travelers to interact with the Follower system;
+    it also allows Travelers to grow the size of their Wanderlust network by offering Trips only to their Followers.
+    While the actual contents of the Trip would be protected, its name/description/primary location are visible to the public;
+    this is another way to encourage people to interact with Wanderlust, as it makes them aware that there is additional content that they could access
+    if they were to follow the Traveler who created the Trip.
+*** Friends
+    The Trip can be viewed by anyone who is Friends with the Traveler who created it.
+    This allows privacy-concious Travelers to create "private groups" to share their Trips only with those that they have approved as their Friends.
+** List
+   Lists are a way for Travelers to save and view Trips that they are interested in.
+   Travelers can define their own lists and save any Trip that is Visible into them.
+* Optional concepts
+** Trip tree
+   One interesting way to structure Trips would be as a type of infinite-depth tree where each node is itself a Trip.
+   This would allow users to create Trips by nesting locations together, and also allow Trips to be viewed at different levels on a map.
+   The leaves of the tree would be the actual individual locations that the Traveler visited, while each node would be context around those locations
+   (e.g. the city that the location is in, or one level higher the country that the city is in).
+*** Using this also solves the minor problem of forcing the user to choose thier primary location for the Trip
+    We define the primary location of the Trip as the location associated with the root of the tree (the least granular location)
+** Groups
+   A way for Travelers to define public groups for those who share a common interest.
+   If implemented, this would provide another Visibility option so that Trips could be shared with an entire Group.
+   This would allow Travelers to network without being forced to each follow one another.
