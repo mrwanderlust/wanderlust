@@ -1,4 +1,16 @@
 {% extends "base.html" %}
+{% block head %}
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<meta name="google-signin-client_id" content="985925390998-akd18nfa2ogm77u69b09fm7po77pe6i9.apps.googleusercontent.com">
+<script type="text/javascript">
+  function onSignIn(googleUser) {
+      var profile = googleUser.getBasicProfile();
+      console.log(profile.getName());
+  }
+</script>
+{% endblock %}
 {% block body %}
-<p>This is the new page</p>
+<div class="d-flex justify-content-center">
+  <div class="g-signin2" data-onsuccess="onSignIn"></div>
+</div>
 {% endblock %}
