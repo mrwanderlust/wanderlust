@@ -3,6 +3,7 @@ use dotenv::dotenv;
 use sqlx::postgres::PgQueryAs;
 use warp::Filter;
 
+use wanderlust::auth::create_google_client;
 use wanderlust::data::connect;
 
 #[derive(Template)]
