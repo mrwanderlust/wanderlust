@@ -1,3 +1,4 @@
+pub mod actions;
 pub mod auth;
 pub mod data;
-mod views;
+pub mod views;
