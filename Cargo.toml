@@ -11,6 +11,7 @@ anyhow = "1.0.31"
 askama = "0.9.0"
 dotenv = "0.15.0"
 google-signin = "0.3.0"
+serde = {version = "1.0.114", features = [ "derive" ] }
 sqlx = { version = "0.3", default-features = false, features = [ "json", "macros", "postgres", "runtime-tokio", "tls", "uuid" ] }
 tokio = { version = "0.2.21", features = ["macros"] }
 warp = "0.2.3"

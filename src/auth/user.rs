@@ -1,9 +1,9 @@
-#[derive(Clone)]
+#[derive(serde::Serialize, Clone)]
 pub enum AuthenticationSource {
     Google = 1,
 }
 
-#[derive(sqlx::FromRow, Clone)]
+#[derive(sqlx::FromRow, serde::Serialize, Clone)]
 pub struct User {
     id: Option<u64>,
     display_name: String,
