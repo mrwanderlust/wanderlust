@@ -50,3 +50,6 @@
    A way for Travelers to define public groups for those who share a common interest.
    If implemented, this would provide another Visibility option so that Trips could be shared with an entire Group.
    This would allow Travelers to network without being forced to each follow one another.
+** Jim
+   This is the name of a cool guy. So is this -> Jordan. This is the first time Jim ever wrote in GitHub and his primary reason for doing so was so
+   that he could be listed as a fellow contributor to this page along with other cool guy named above.
